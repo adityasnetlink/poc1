@@ -5,6 +5,10 @@ spec:
   replicas: 1
   selector:
     
+  template:
+      metadata:
+        name: v
+      spec:
         containers:
         - name: voting-app
           image: dockersamples/examplevotingapp_vote
