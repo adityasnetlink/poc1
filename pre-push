@@ -1,5 +1,5 @@
 #!/bin/sh
 
-curl --user ADMIN:117cfde3ef10956338708dc3debc14b72a http://10.90.21.68:30001/job/poc-gitlabpipeline/build?token=letmebuildit&delay=120sec
+#curl --user ADMIN:117cfde3ef10956338708dc3debc14b72a http://10.90.21.68:30001/job/poc-gitlabpipeline/build?token=letmebuildit&delay=120sec
 
-#curl http://10.90.21.68:30001/git/notifyCommit?url=https://github.com/adityasnetlink/poc1.git
+curl http://10.90.21.68:30001/git/notifyCommit?url=https://github.com/adityasnetlink/poc1.git&&delay=30sec || curl http://10.90.21.69:30001/git/notifyCommit?url=https://github.com/adityasnetlink/poc1.git&&delay=30sec
