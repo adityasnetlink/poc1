@@ -7,4 +7,10 @@ spec:
     
   template:
       metadata:
-      
+        name: v
+      spec:
+        containers:
+        - name: voting-app
+          image: dockersamples/examplevotingapp_vote
+          ports:
+            - containerPort: 109
