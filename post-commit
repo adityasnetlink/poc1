@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl --user ADMIN:117cfde3ef10956338708dc3debc14b72a http://10.90.21.68:30001/job/poc-gitlabpipeline/build?token=letmebuildit
